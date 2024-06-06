@@ -1,0 +1,30 @@
+import { SortOrder } from "../../util/SortOrder";
+
+export type UserOrderByInput = {
+  autoLogoutTime?: SortOrder;
+  autoLogoutTimeCustom?: SortOrder;
+  autoUnblockTime?: SortOrder;
+  autoUnblockTimeCustom?: SortOrder;
+  comment?: SortOrder;
+  commentCustom?: SortOrder;
+  createdAt?: SortOrder;
+  email?: SortOrder;
+  expiryDaysNotification?: SortOrder;
+  expiryDaysNotificationCustom?: SortOrder;
+  firstName?: SortOrder;
+  id?: SortOrder;
+  lastName?: SortOrder;
+  numberOfAttempts?: SortOrder;
+  numberOfAttemptsCustom?: SortOrder;
+  password?: SortOrder;
+  passwordExpiry?: SortOrder;
+  passwordExpiryCustom?: SortOrder;
+  passwordText?: SortOrder;
+  roles?: SortOrder;
+  updatedAt?: SortOrder;
+  userLevel?: SortOrder;
+  userLevelCustomized?: SortOrder;
+  username?: SortOrder;
+  userName?: SortOrder;
+  usernameCustom?: SortOrder;
+};

@@ -1,0 +1,31 @@
+import { JsonValue } from "type-fest";
+import { Session } from "../session/Session";
+
+export type User = {
+  autoLogoutTime: number | null;
+  autoLogoutTimeCustom: number | null;
+  autoUnblockTime: number | null;
+  autoUnblockTimeCustom: number | null;
+  comment: string | null;
+  commentCustom: string | null;
+  createdAt: Date;
+  email: string | null;
+  expiryDaysNotification: number | null;
+  expiryDaysNotificationCustom: number | null;
+  firstName: string | null;
+  id: string;
+  lastName: string | null;
+  numberOfAttempts: number | null;
+  numberOfAttemptsCustom: number | null;
+  passwordExpiry: number | null;
+  passwordExpiryCustom: number | null;
+  passwordText: string | null;
+  roles: JsonValue;
+  sessions?: Array<Session>;
+  updatedAt: Date;
+  userLevel?: "Option1" | null;
+  userLevelCustomized?: "Option1" | null;
+  username: string;
+  userName: string | null;
+  usernameCustom: string | null;
+};
