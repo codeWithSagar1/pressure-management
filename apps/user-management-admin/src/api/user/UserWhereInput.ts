@@ -1,0 +1,30 @@
+import { IntNullableFilter } from "../../util/IntNullableFilter";
+import { StringNullableFilter } from "../../util/StringNullableFilter";
+import { StringFilter } from "../../util/StringFilter";
+import { SessionListRelationFilter } from "../session/SessionListRelationFilter";
+
+export type UserWhereInput = {
+  autoLogoutTime?: IntNullableFilter;
+  autoLogoutTimeCustom?: IntNullableFilter;
+  autoUnblockTime?: IntNullableFilter;
+  autoUnblockTimeCustom?: IntNullableFilter;
+  comment?: StringNullableFilter;
+  commentCustom?: StringNullableFilter;
+  email?: StringNullableFilter;
+  expiryDaysNotification?: IntNullableFilter;
+  expiryDaysNotificationCustom?: IntNullableFilter;
+  firstName?: StringNullableFilter;
+  id?: StringFilter;
+  lastName?: StringNullableFilter;
+  numberOfAttempts?: IntNullableFilter;
+  numberOfAttemptsCustom?: IntNullableFilter;
+  passwordExpiry?: IntNullableFilter;
+  passwordExpiryCustom?: IntNullableFilter;
+  passwordText?: StringNullableFilter;
+  sessions?: SessionListRelationFilter;
+  userLevel?: "Option1";
+  userLevelCustomized?: "Option1";
+  username?: StringFilter;
+  userName?: StringNullableFilter;
+  usernameCustom?: StringNullableFilter;
+};
